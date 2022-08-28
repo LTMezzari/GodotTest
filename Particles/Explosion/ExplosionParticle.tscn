@@ -1,0 +1,62 @@
+[gd_scene load_steps=10 format=3 uid="uid://cp8e8nlh5k2xa"]
+
+[ext_resource type="Texture2D" uid="uid://ds4si0eo7jtqx" path="res://Particles/Flame.png" id="1_2ivpp"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_4vun0"]
+blend_mode = 1
+
+[sub_resource type="Gradient" id="Gradient_a2hsj"]
+offsets = PackedFloat32Array(0, 0.151079, 0.510791, 0.884892, 1)
+colors = PackedColorArray(0, 0, 0, 0, 1, 0.690196, 0, 1, 0.325281, 0.414438, 9.62615e-08, 1, 0.937026, 0.0386809, 8.9844e-09, 1, 1, 0, 0, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_jlua5"]
+gradient = SubResource("Gradient_a2hsj")
+width = 100
+
+[sub_resource type="Curve" id="Curve_f17sx"]
+max_value = 100.0
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0, Vector2(1, 100), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_jhjvu"]
+width = 2048
+curve = SubResource("Curve_f17sx")
+
+[sub_resource type="Curve" id="Curve_6ehlf"]
+_data = [Vector2(0, 0.281818), 0.0, 0.0, 0, 0, Vector2(0.846875, 0.809091), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_xkx2q"]
+width = 2048
+curve = SubResource("Curve_6ehlf")
+
+[sub_resource type="ParticlesMaterial" id="ParticlesMaterial_gjaxy"]
+particle_flag_disable_z = true
+direction = Vector3(0, -1, 0)
+spread = 180.0
+gravity = Vector3(0, 0, 0)
+initial_velocity_min = 43.01
+initial_velocity_max = 1000.0
+angular_velocity_min = 100.0
+angular_velocity_max = 100.0
+orbit_velocity_min = 0.0
+orbit_velocity_max = 0.0
+damping_min = 300.0
+damping_max = 300.0
+damping_curve = SubResource("CurveTexture_jhjvu")
+angle_min = 720.0
+angle_max = 720.0
+scale_min = 0.5
+scale_curve = SubResource("CurveTexture_xkx2q")
+color_ramp = SubResource("GradientTexture1D_jlua5")
+
+[node name="ExplosionParticle" type="GPUParticles2D"]
+material = SubResource("CanvasItemMaterial_4vun0")
+emitting = false
+amount = 32
+lifetime = 0.5
+one_shot = true
+explosiveness = 1.0
+local_coords = true
+process_material = SubResource("ParticlesMaterial_gjaxy")
+texture = ExtResource("1_2ivpp")

@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://c0l03gwos80ol"]
+
+[ext_resource type="Texture2D" uid="uid://ds4si0eo7jtqx" path="res://Particles/Flame.png" id="1_2ivpp"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_4vun0"]
+blend_mode = 1
+
+[sub_resource type="Gradient" id="Gradient_qwdc7"]
+offsets = PackedFloat32Array(0, 0.151079, 0.510791, 0.884892, 1)
+colors = PackedColorArray(0, 0, 0, 0, 1, 0.690196, 0, 1, 0.325281, 0.414438, 9.62615e-08, 1, 0.937026, 0.0386809, 8.9844e-09, 1, 1, 0, 0, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_3wj6s"]
+gradient = SubResource("Gradient_qwdc7")
+width = 100
+
+[sub_resource type="ParticlesMaterial" id="ParticlesMaterial_pms4s"]
+particle_flag_disable_z = true
+direction = Vector3(0, -1, 0)
+spread = 14.03
+gravity = Vector3(0, 0, 0)
+initial_velocity_min = 43.01
+initial_velocity_max = 430.11
+angular_velocity_min = 100.0
+angular_velocity_max = 100.0
+orbit_velocity_min = 0.0
+orbit_velocity_max = 0.0
+angle_min = 720.0
+angle_max = 720.0
+scale_min = 0.5
+color_ramp = SubResource("GradientTexture1D_3wj6s")
+
+[node name="FlameParticle" type="GPUParticles2D"]
+material = SubResource("CanvasItemMaterial_4vun0")
+lifetime = 0.5
+explosiveness = 0.1
+local_coords = true
+process_material = SubResource("ParticlesMaterial_pms4s")
+texture = ExtResource("1_2ivpp")

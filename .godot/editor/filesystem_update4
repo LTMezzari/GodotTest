@@ -1,0 +1,4 @@
+res://World.tscn
+res://Characters/Male/Male.tscn
+res://Characters/Player.gd
+res://Characters/Female/Female.tscn

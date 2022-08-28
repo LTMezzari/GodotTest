@@ -1,0 +1,12 @@
+DirectionalLight3D
+Node3D
+CSGBox3D
+Position3D
+OmniLight3D
+Camera3D
+StaticBody3D
+CharacterBody3D
+CollisionShape3D
+AnimationTree
+GPUParticles2D
+Node2D

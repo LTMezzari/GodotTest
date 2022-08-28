@@ -1,0 +1,31 @@
+0b7126e0c6e86d3ec295a72f5aa6e0bd
+::res://::1661293326
+icon.png::CompressedTexture2D::2922770697850328527::1660604033::1660604037::1::::<><>::
+World.tscn::PackedScene::7392026338845234653::1661293321::0::1::::<><>::uid://jeyvjcb8504t
+::res://Animations/::1661293323
+Breathing Idle.fbx::AnimationLibrary::502045511767522193::1660607765::1660607843::1::::<><>::
+Hard Landing.fbx::AnimationLibrary::7245641950661283461::1660773467::1660773549::1::::<><>::
+Jumping Up.fbx::AnimationLibrary::2767237053161578172::1660686425::1660686581::1::::<><>::
+Running.fbx::AnimationLibrary::1064565450959256762::1661292896::1661293216::1::::<><>::
+Walk Left.fbx::AnimationLibrary::3908891214932753669::1661292814::1661293254::1::::<><>::
+Walk Right.fbx::AnimationLibrary::7095938544950069705::1661292768::1661293286::1::::<><>::
+Walking Backward.fbx::AnimationLibrary::7518756625874993621::1661292675::1661293323::1::::<><>::
+Walking Female.fbx::AnimationLibrary::3520756663678178561::1660607765::1660686488::1::::<><>::
+Walking Male.fbx::AnimationLibrary::8431590080874478936::1660686141::1660686260::1::::<><>::
+::res://Assets/::1660607806
+mixamo_bone_map.tres::BoneMap::4878196276838597174::1660605130::0::1::::<><>::
+::res://Characters/::1661292992
+Controller.gd::GDScript::-1::1661292265::0::1::::Controller<>CharacterBody3D<>::
+Player.gd::GDScript::-1::1661292992::0::1::::Player<>CharacterBody3D<>::
+::res://Characters/Female/::1661293320
+Female.tscn::PackedScene::1956423422374871921::1661293320::0::1::::<><>::uid://djdiihu2srit8
+xbot.fbx::PackedScene::7797655199188172751::1660605489::1660686869::1::::<><>::
+::res://Characters/Male/::1661293321
+Male.tscn::PackedScene::641452289147432177::1661293321::0::1::::<><>::res://Characters/Player.gd
+ybot.fbx::PackedScene::4020412009186611302::1660604242::1660608207::1::::<><>::
+::res://Particles/::1660684658
+Flame.png::CompressedTexture2D::8483636703594861323::1660683592::1660684658::1::::<><>::
+::res://Particles/Explosion/::1660685583
+ExplosionParticle.tscn::PackedScene::5894100987165551434::1660685583::0::1::::<><>::uid://ds4si0eo7jtqx
+::res://Particles/Flame/::1660685640
+FlameParticle.tscn::PackedScene::6551838890467442355::1660685640::0::1::::<><>::uid://ds4si0eo7jtqx
